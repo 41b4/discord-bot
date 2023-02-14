@@ -111,7 +111,7 @@ client.on("interactionCreate", async (inter) => {
             clearInterval(start)
             await inter.channel.send(`${frog.name} is ded`)
         }
-    },60000)
+    },60000)//caada minuto pierde -1 salud
     if(frog.health>0){
     client.on("messageCreate", async (msg) => {
         if (msg.content == "!stats") {
